@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Café Ghrib</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #e8f6f3;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      padding: 32px 18px 24px 18px;
+      border: 2px solid #40c9c6;
+    }
+    h1 {
+      text-align: center;
+      color: #40c9c6;
+      margin-bottom: 4px;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 28px;
+      font-size: 1.1em;
+    }
+    .category {
+      margin-top: 32px;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      color: #40c9c6;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      border-bottom: 2px solid #40c9c6;
+      padding-bottom: 4px;
+    }
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    .item-name {
+  font-weight: 500;
+  font-size: 1.08em;
+  color: #444;
+  padding-left: 8px;
+} 
+    .item-price {
+      color: #40c9c6;
+      font-weight: 700;
+      font-size: 1.08em;
+      background: #e8f6f3;
+      border-radius: 8px;
+      padding: 2px 10px;
+    }
+    .fa-solid, .fa-regular, .fa-brands {
+      color: #40c9c6;
+    }
+    @media (max-width: 700px) {
+      body {
+        padding: 0 8px;
+      }
+      .container {
+        padding: 12px 2px 12px 2px;
+      }
+      h1 {
+        font-size: 1.3em;
+      }
+      .category {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Menu Café Ghrib</h1>
+    <div class="subtitle">Bienvenue ! Découvrez nos produits et spécialités :</div>
+
+    <div class="category"><i class="fa-solid fa-mug-hot"></i> Cafés & Spécialités</div>
+    <ul class="menu-list">
+      <li class="menu-item"><span class="item-name">Filtre</span><span class="item-price">1,300 DT</span></li>
+      <li class="menu-item"><span class="item-name">Express</span><span class="item-price">1,900 DT</span></li>
+      <li class="menu-item"><span class="item-name">Cappuccin</span><span class="item-price">2,300 DT</span></li>
+      <li class="menu-item"><span class="item-name">Express Nestlé</span><span class="item-price">2,300 DT</span></li>
+      <li class="menu-item"><span class="item-name">Armatora</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Direct</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Cappuccino</span><span class="item-price">2,300 DT</span></li>
+      <li class="menu-item"><span class="item-name">Chtare sghira</span><span class="item-price">1,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Verre Yaourte</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Café au Lait</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Verre de Lait</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Café chtar</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Chocolat Chaud</span><span class="item-price">3,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Chocolat Chaud fruits Sec</span><span class="item-price">4,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Café Turc</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Café Chocolat PM</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Café Chocolat GM</span><span class="item-price">2,000 DT</span></li>
+    </ul>
+
+    <div class="category"><i class="fa-solid fa-glass-water"></i> Eaux & Boissons Fraîches</div>
+    <ul class="menu-list">
+      <li class="menu-item"><span class="item-name">Eau 1,5 L</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Eau 0,5 L</span><span class="item-price">1,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Eau 1L</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Eau Gazefier 0,5 L</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Eau Gazefier 1L</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Apla Verre</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Fanta Verre</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Boga Verre</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Coca Boite</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Fanta Boite</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Déleo</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Jus Oh</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Délio Peche</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Délio Poire</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Délio Menthe</span><span class="item-price">1,500 DT</span></li>
+    </ul>
+
+    <div class="category"><i class="fa-solid fa-cake-candles"></i> Pâtisseries & Gâteaux</div>
+    <ul class="menu-list">
+      <li class="menu-item"><span class="item-name">Tranche Gateau</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Mille feuille</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Tarte</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Délice</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Cheese Cake</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Croissant</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Pain Chocolat</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Pate Amande</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Tranche Cake</span><span class="item-price">1,200 DT</span></li>
+      <li class="menu-item"><span class="item-name">Pronkon</span><span class="item-price">0,800 DT</span></li>
+      <li class="menu-item"><span class="item-name">Doze Amande</span><span class="item-price">4,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Doze Amande Séche</span><span class="item-price">4,000 DT</span></li>
+    </ul>
+
+    <div class="category"><i class="fa-solid fa-martini-glass-citrus"></i> Thés & Infusions</div>
+    <ul class="menu-list">
+      <li class="menu-item"><span class="item-name">Thé</span><span class="item-price">1,300 DT</span></li>
+      <li class="menu-item"><span class="item-name">Thé Menthe</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Thé au Amande Sec</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Thé Amandes Fraiche</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Thé Americain</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Tizana</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Thé Amandes Noisette</span><span class="item-price">5,000 DT</span></li>
+    </ul>
+
+    <div class="category"><i class="fa-solid fa-wine-glass"></i> Jus & Spécialités</div>
+    <ul class="menu-list">
+      <li class="menu-item"><span class="item-name">Jus fraise Amande</span><span class="item-price">7,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Shop Citron</span><span class="item-price">3,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Citron Amande</span><span class="item-price">6,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Verre Citron</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Verre Rozata</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Shop Rozata</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Jus Carotte</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Jus Fraise</span><span class="item-price">4,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Lait de Poule</span><span class="item-price">4,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Jus Fruit</span><span class="item-price">4,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Jus Fruits Sec</span><span class="item-price">7,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Mini Fruit sec</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Jus Orange</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Mojito</span><span class="item-price">3,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Mini Jwajem</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Shop Citron Amande</span><span class="item-price">6,500 DT</span></li>
+    </ul>
+
+    <div class="category"><i class="fa-solid fa-smoking"></i> Chichas & Spécialités</div>
+    <ul class="menu-list">
+      <li class="menu-item"><span class="item-name">1/4 Chikh</span><span class="item-price">4,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">1/4 Jirak</span><span class="item-price">4,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Sa7fa Jirak GM</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Chicha Menthe</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Chicha Pomme</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Chicha Raisin Menthe</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">LOVE</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">MIA MOR</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">CHIKH MONEY</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">HAWAI</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">SALOUM W NA3NA3</span><span class="item-price">5,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">JWAJEM</span><span class="item-price">8,000 DT</span></li>
+    </ul>
+
+    <div class="category"><i class="fa-solid fa-bread-slice"></i> Snacks & Divers</div>
+    <ul class="menu-list">
+      <li class="menu-item"><span class="item-name">Fricasse</span><span class="item-price">1,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Sandwich Thon Baguette</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Sandwich Thon Mbasses</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Galette</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Tranche Pizza</span><span class="item-price">2,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">PATTEE</span><span class="item-price">2,000 DT</span></li>
+      <li class="menu-item"><span class="item-name">Belote</span><span class="item-price">3,500 DT</span></li>
+      <li class="menu-item"><span class="item-name">Chkobba</span><span class="item-price">3,000 DT</span></li>
+    </ul>
+
+  </div>
+</body>
+</html> 
