@@ -173,7 +173,7 @@ export default function MenuCafeGhrib() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
 
-        <div className="relative z-10 text-white p-6 sm:p-10 max-w-3xl">
+        <div className="relative z-10 text-white p-6 sm:p-10 max-w-3xl mx-auto">
           {produits[category].map((item, i) => (
             <motion.div
               key={i}
