@@ -1,6 +1,7 @@
 {
   "name": "menu-cafe-ghrib",
   "version": "1.0.0",
+  "type": "module",
   "description": "Menu interactif du Café Ghrib avec générateur de QR code",
   "main": "MenuCafeGhrib.jsx",
   "scripts": {
