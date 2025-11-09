@@ -126,7 +126,7 @@ export default function MenuCafeGhrib() {
       className="min-h-screen flex flex-col font-['Poppins'] bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-100"
     >
       {/* Header Section */}
-      <header className="bg-[#7B3F00] text-white py-6 px-8 shadow-2xl flex flex-col items-center justify-center md:flex-row md:justify-between">
+      <header className="fixed top-0 left-0 right-0 bg-[#7B3F00] text-white py-6 px-8 shadow-2xl flex flex-col items-center justify-center md:flex-row md:justify-between z-50">
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -165,7 +165,7 @@ export default function MenuCafeGhrib() {
       </header>
 
       {/* Main Section */}
-      <main className="flex-1 relative overflow-hidden">
+      <main className="flex-1 relative overflow-hidden pt-24 md:pt-28">
         <img
           src={categories.find((c) => c.id === category)?.image}
           alt={category}
