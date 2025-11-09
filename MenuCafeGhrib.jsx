@@ -165,7 +165,7 @@ export default function MenuCafeGhrib() {
       </header>
 
       {/* Main Section */}
-      <main className="flex-1 relative overflow-hidden pt-24 md:pt-28">
+      <main className="flex-1 relative overflow-hidden pt-32 md:pt-28">
         <img
           src={categories.find((c) => c.id === category)?.image}
           alt={category}
