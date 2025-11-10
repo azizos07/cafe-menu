@@ -15,10 +15,10 @@ export default function MenuCafeGhrib() {
 
   const categories = [
     { id: 'cafes', label: 'Cafés & Spécialités', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80' },
-    { id: 'boissons', label: 'Boissons fraîches', image: './boisson fraiche.jpg' },
-    { id: 'desserts', label: 'Desserts Maison', image: './dessert maison.webp' },
-    { id: 'chicha', label: 'Chicha & Détente', image: './chicha.jpg' },
-    { id: 'jeux', label: 'Jeux de Carte', image: './jeu de carte.jfif' },
+    { id: 'boissons', label: 'Boissons fraîches', image: 'boisson fraiche.jpg' },
+    { id: 'desserts', label: 'Desserts Maison', image: 'dessert maison.webp' },
+    { id: 'chicha', label: 'Chicha & Détente', image: 'chicha.jpg' },
+    { id: 'jeux', label: 'Jeux de Carte', image: 'jeu de carte.jfif' },
   ];
 
   const produits = {
@@ -171,7 +171,10 @@ export default function MenuCafeGhrib() {
       {/* Main Section */}
       <main className="flex-1 relative overflow-hidden pt-40 md:pt-28">
         <img
-          src={categories.find((c) => c.id === category)?.image}
+          src={(() => {
+            const img = categories.find((c) => c.id === category)?.image;
+            return img?.startsWith('http') ? img : encodeURI(img || '');
+          })()}
           alt={category}
           className="absolute inset-0 w-full h-full object-cover opacity-80"
         />
