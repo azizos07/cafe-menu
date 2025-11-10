@@ -15,9 +15,9 @@ export default function MenuCafeGhrib() {
 
   const categories = [
     { id: 'cafes', label: 'Cafés & Spécialités', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80' },
-    { id: 'boissons', label: 'Boissons fraîches', image: 'https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=1000&q=80' },
-    { id: 'desserts', label: 'Desserts Maison', image: 'https://images.unsplash.com/photo-1578985545062-69928b1be8f1?auto=format&fit=crop&w=1000&q=80' },
-    { id: 'chicha', label: 'Chicha & Détente', image: 'https://images.unsplash.com/photo-1617112021475-3d3e09e1c6b3?auto=format&fit=crop&w=1000&q=80' },
+    { id: 'boissons', label: 'Boissons fraîches', image: './boisson fraiche.jpg' },
+    { id: 'desserts', label: 'Desserts Maison', image: './dessert maison.webp' },
+    { id: 'chicha', label: 'Chicha & Détente', image: './chicha.jpg' },
   ];
 
   const produits = {
