@@ -145,7 +145,7 @@ export default function MenuCafeGhrib() {
               className={`text-base whitespace-nowrap font-semibold transition-all duration-300 px-4 py-2 rounded-full flex-shrink-0 ${
                 category === c.id
                   ? 'bg-amber-300 text-[#7B3F00] shadow-md'
-                  : 'text-white hover:text-amber-200 hover:bg-[#a05a18]'
+                  : 'text-white border-2 border-white bg-transparent hover:bg-white/10'
               }`}
             >
               {c.label}
@@ -165,7 +165,7 @@ export default function MenuCafeGhrib() {
       </header>
 
       {/* Main Section */}
-      <main className="flex-1 relative overflow-hidden pt-32 md:pt-28">
+      <main className="flex-1 relative overflow-hidden pt-40 md:pt-28">
         <img
           src={categories.find((c) => c.id === category)?.image}
           alt={category}
