@@ -216,7 +216,6 @@ export default function MenuCafeGhrib() {
               <h3 className="text-2xl font-bold text-[#7B3F00] mb-4">Code QR du Menu</h3>
               <p className="text-gray-600 mb-6">Scannez pour partager le menu</p>
               
-              {/* QR Code using API */}
               <div className="bg-white p-4 rounded-lg inline-block mb-4">
                 <img
                   src={`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(qrUrl)}`}
