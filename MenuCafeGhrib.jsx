@@ -131,9 +131,19 @@ export default function MenuCafeGhrib() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-3xl font-bold mb-4 md:mb-0 text-center"
+          className="text-4xl md:text-5xl mb-4 md:mb-0 text-center"
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            fontWeight: 900,
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.3)',
+            letterSpacing: '1px',
+            background: 'linear-gradient(135deg, #ffffff 0%, #FFD700 50%, #ffffff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}
         >
-          Menu Café Ghrib
+          ☕ Menu Café Ghrib
         </motion.h1>
 
         {/* Horizontal Scrollable Categories */}
