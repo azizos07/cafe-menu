@@ -9,7 +9,17 @@ export default function MenuCafeGhrib() {
   // Générer l'URL pour le QR code
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      setQrUrl(window.location.href);
+      // S'assurer que l'URL est correcte et sans slash final
+      let url = window.location.href;
+      // Enlever le slash final s'il existe (sauf pour la racine)
+      if (url.endsWith('/') && url !== 'https://menu-cafe-ghrib.netlify.app/') {
+        url = url.slice(0, -1);
+      }
+      // Forcer l'URL Netlify si on est sur Netlify
+      if (url.includes('netlify.app')) {
+        url = 'https://menu-cafe-ghrib.netlify.app';
+      }
+      setQrUrl(url);
     }
   }, []);
 
